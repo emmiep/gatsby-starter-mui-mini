@@ -1,10 +1,14 @@
 import React from 'react';
+import {CssBaseline, Container} from '@material-ui/core';
 import './layout.css';
 
 export default function Layout({children}) {
   return (
-    <main>
-      {children}
-    </main>
+    <>
+      <CssBaseline />
+      <Container maxWidth="md">
+        {children}
+      </Container>
+    </>
   );
 }
